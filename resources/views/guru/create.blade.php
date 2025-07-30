@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Create page</h1>
-    <form action="">
+    <form action="{{ route('guru.store') }}" method="POST">
+        @csrf
         <title>Nama Guru</title>
         <input type="text" name="nama_guru">
         <button>Submit</button><br><br>
