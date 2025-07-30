@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class GuruController extends Controller
 {
     public function index() {
-        return view("index");
+        $gurus = guru::all();
+        return view("index", ['datas' => $gurus]);
     }
 
     public function create() {

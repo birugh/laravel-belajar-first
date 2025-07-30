@@ -9,5 +9,19 @@
 <body>
     <h1>Hello World</h1>
     <a href="/create">Create</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nama Guru</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($datas as $data)
+            <tr>
+                <td>{{ $data->nama_guru }}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </body>
 </html>
