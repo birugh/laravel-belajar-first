@@ -26,4 +26,9 @@ class GuruController extends Controller
         // ]);
         return redirect()->back();
     }
+
+    public function destroy($id) {
+        guru::destroy($id);
+        return redirect()->back();
+    }
 }
